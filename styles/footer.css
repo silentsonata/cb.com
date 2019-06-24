@@ -1,0 +1,8 @@
+footer {
+    background: var(--theme-secondary-color);
+    color: var(--theme-primary-color);
+    padding: 20px;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 4px;
+}

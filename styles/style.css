@@ -1,0 +1,74 @@
+@import '/styles/header.css';
+@import '/styles/footer.css';
+@import url('https://fonts.googleapis.com/css?family=Sanchez:400,400i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP:400,700&display=swap');
+
+
+:root {
+    --theme-primary-color: #dfe6e9;
+    --theme-secondary-color: #2d3436;
+    --theme-accent-color: #e17055;
+    /* --theme-accent-color: #2d3436; */
+
+    --header-height: 50px;
+    --header-height-mobile: 70px;
+}
+
+body, html {
+    background: var(--theme-secondary-color);
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Noto Serif JP', serif;
+    color: var(--theme-secondary-color);
+}
+
+section {
+    position: relative;
+    display: block;
+    z-index: 10;
+    background: var(--theme-primary-color);
+}
+
+h1 {
+    color: var(--theme-accent-color);
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'Lora', serif;
+}
+
+a {
+    color: var(--theme-accent-color);
+}
+
+#banner {
+    display: block;
+    height: 70vh;
+    width: 100%;
+    object-fit: cover;
+    margin: 0px;
+    padding: 0px;
+}
+
+.divider {
+    display: block;
+    width: 100%;
+    height: 5px;
+    margin: 0px;
+    padding: 0px;
+
+    background: var(--theme-accent-color);
+}
+
+.content {
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 800px;
+}
+
+.full-image {
+    display: block;
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}
