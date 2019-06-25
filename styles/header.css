@@ -1,7 +1,6 @@
 header #header-wrapper {
     position: relative;
     text-align: center;
-    /* background: var(--theme-secondary-color); */
     height: var(--header-height);
 
     box-shadow: 0px 1px 0px rgba(150, 150, 150, .8);
@@ -9,6 +8,27 @@ header #header-wrapper {
     z-index: 100;
 
     pointer-events: none;
+}
+
+header #header-wrapper #last-name {
+    position: absolute;
+    left: 50%;
+    transform: translateX(60px);
+}
+
+header #header-wrapper #first-name {
+    position: absolute;
+    right: 50%;
+    transform: translateX(-60px);
+}
+
+header #header-wrapper #first-name, header #header-wrapper #last-name {
+    top: 12px;
+    color: var(--theme-primary-color);
+    text-transform: lowercase;
+    letter-spacing: 4px;
+
+    transition: .5s;
 }
 
 header nav a {
@@ -196,6 +216,10 @@ header #url {
     
     header:hover #header-wrapper #header-triangle-backdrop-left, header:active #header-wrapper #header-triangle-backdrop-left, header:hover #header-wrapper #header-triangle-backdrop-right, header:active #header-wrapper #header-triangle-backdrop-right {
         top: calc(var(--header-height) + 350px) !important;
+    }
+
+    header #header-wrapper #first-name, header #header-wrapper #last-name {
+        top: 20px;
     }
 
     header nav {
