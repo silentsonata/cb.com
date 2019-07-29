@@ -51,13 +51,90 @@ a {
     padding: 0px;
 }
 
-#banner-fs {
+.banner-fs {
     display: block;
     height: 95vh;
     width: 100%;
     object-fit: cover;
     margin: 0px;
     padding: 0px;
+}
+
+#banner-wrapper {
+    position: relative;
+    display: block;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+
+    background: black;
+}
+
+#banner-background {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+    opacity: 0;
+
+    animation-name: banner-text-in;
+    animation-delay: .5s;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+#banner-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#banner-overlay h1 {
+    color: var(--theme-primary-color);
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    opacity: 0;
+
+    animation-name: banner-text-in;
+    animation-delay: .5s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+#banner-overlay h2 {
+    color: #aaa;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 15px;
+    opacity: 0;
+
+    animation-name: banner-text-in;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.dim-block {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+@keyframes banner-text-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .divider {
@@ -76,9 +153,43 @@ a {
     max-width: 800px;
 }
 
+.content-wrapper-dark {
+    background: var(--theme-secondary-color);
+}
+
+.center {
+    text-align: center;
+}
+
 .full-image {
     display: block;
     width: 100%;
     height: 50vh;
     object-fit: cover;
+}
+
+.button {
+    display: inline-block;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 5px 10px;
+    margin: 30px;
+    text-decoration: none;
+    border: 2px solid var(--theme-accent-color);
+}
+
+form {
+    display: inline-block;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+form input, form select, form textarea, form button {
+    display: inline-block;
+    width: 80%;
+    margin: 10px;
+    padding: 10px;
+    resize: vertical;
 }

@@ -19,17 +19,23 @@
     <header></header>
 
     <section>
-        <video id="banner" autoplay muted loop playsinline>
+        <div id="banner-wrapper">
+            <img id="banner-background" src="/ref/banners/beach_sunrise.jpg">
+            <div class="dim-block"></div>
+            <div id="banner-overlay">
+                <h1>Drone Cinematography</h1>
+                <h2>The angle above</h2>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <video class="banner-fs" autoplay muted loop playsinline>
             <source src="/ref/banners/Demo Reel - Version 1.mp4">
         </video>
         <div class="divider"></div>
-        <div class="content">
-            <h1>About Me</h1>
-            <p>
-                Hello! I'm Christopher Bernhardt. I am a freelancer that loves to be creative with every
-                project I work on. In all the projects I have done, I strive to make content that not only pleases
-                customers but also the clients. A product that you are happy with is a product that sells.
-            </p>
+        <div class="content-wrapper-dark">
+            <div class="content center">
+                <a class="button" href="/getintouch/">Get in touch</a>
+            </div>
         </div>
     </section>
     <footer>

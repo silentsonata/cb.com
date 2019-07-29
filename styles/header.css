@@ -31,16 +31,17 @@ header #header-wrapper #first-name, header #header-wrapper #last-name {
     transition: .5s;
 }
 
+header #header-wrapper a {
+    pointer-events: all;
+    text-decoration: none;
+}
+
 header nav a {
     color: var(--theme-primary-color);
     text-decoration: none;
-
     padding: 10px;
-
     transition: .2s;
-
     font-size: 12px;
-
     letter-spacing: 4px;
 }
 
@@ -73,6 +74,10 @@ header ul li {
     display: inline-block;
     margin: 20px 0px;
     width: 40%;
+}
+
+header a {
+    text-decoration: none;
 }
 
 

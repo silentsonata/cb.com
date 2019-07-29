@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <title>Christopher Bernhardt | Offical Website</title>
+    <meta charset="utf8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="/styles/style.css">
+    <script src="/lib/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('header').load('/template/header.html');
+            $('footer').load('/template/footer.html');
+        });
+    </script>
+</head>
+
+<body>
+    <header></header>
+
+    <section>
+        <div id="banner-wrapper">
+            <img id="banner-background" src="/ref/images/realestate_2.jpg">
+            <div class="dim-block"></div>
+            <div id="banner-overlay">
+                <h1>Realestate Media</h1>
+                <h2>Make your house stand above the rest</h2>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <video class="banner-fs" autoplay muted loop playsinline>
+            <source src="/ref/footage/House_shots.mp4">
+        </video>
+        <div class="divider"></div>
+        <div class="content-wrapper-dark">
+            <div class="content center">
+                <a class="button" href="/getintouch/">Get in touch</a>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <img class="banner-fs" src="/ref/images/realestate_1.jpg">
+        <div class="divider"></div>
+        <img class="banner-fs" src="/ref/images/realestate_3.jpg">
+        <div class="divider"></div>
+        <div class="content-wrapper-dark">
+            <div class="content center">
+                <a class="button" href="/getintouch/">Get in touch</a>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

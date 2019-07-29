@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <title>Christopher Bernhardt | Get In Touch</title>
+    <meta charset="utf8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="/styles/style.css">
+    <script src="/lib/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('header').load('/template/header.html');
+            $('footer').load('/template/footer.html');
+        });
+    </script>
+</head>
+
+<body>
+    <header></header>
+
+    <section>
+        <img id="banner" src="/ref/banners/contact_banner.jpg">
+        <div class="content">
+            <h1>Get In Touch</h1>
+            <div class="center">
+                <form method="POST" name="contactForm" action="./scripts/email.php">
+                    <input type="text" name="firstName" placeholder="First Name">
+                    <input type="text" name="lastName" placeholder="Last Name">
+                    <input type="email" name="email" placeholder="Email">
+                    <select name="jobType">
+                        <option value="">Select Type</option>
+                        <option value="Drone Cinematography">Drone Cinematography</option>
+                        <option value="Residential Areal Photo/Video">Residential Areal Photo/Video</option>
+                        <option value="Stage Lighting">Stage Lighting</option>
+                    </select>
+                    <textarea name="description" placeholder="Job Description"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
